@@ -1,37 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int ones_count(string binary)
-{
-    int count = 0;
-    for (int i = 0; i < 8; i++)
-    {
-        if (binary[i] == '1')
-        {
-            count += 1;
-        }
-    }
-    return count;
-}
-
 int main()
 {
-    // for (int i = 0; i < 27; i++)
-    // {
-        // string binary = bitset<8>(i).to_string();
-        // cout << i << " --> " << binary << " [" << ones_count(binary) << "] " << endl;
-    // }
+    int a = 15;
+    int b = 7;
+    int c;
 
-    vector<int> nums = {2,4,6,8,10};
+    c = a & b;
+    cout << c << endl;
 
-    if(find(nums.begin(),nums.end(),3) == nums.end())
-    {
-        cout << "not present" << endl;
-    }
-    else
-    {
-        cout << "present" << endl;
-    }
+    c = a | b;
+    cout << c << endl;
+
+    c = ~a;
+    cout << c << endl;
+
+    c = a << 5;
+    cout << c << endl;
+
+    c = a >> 1;
+    cout << c << endl;
 
     return 0;
 }
