@@ -3,24 +3,24 @@ using namespace std;
 
 int main()
 {
-    int a = 15;
-    int b = 7;
-    int c;
+    // while loop
 
-    c = a & b;
-    cout << c << endl;
+    while(/*condition*/)
+    {
+        // code
+    }
 
-    c = a | b;
-    cout << c << endl;
+    // for loop
 
-    c = ~a;
-    cout << c << endl;
+    /*
+    for(int i = 0; i < n; i++)
+    {}
+    */
 
-    c = a << 5;
-    cout << c << endl;
-
-    c = a >> 1;
-    cout << c << endl;
-
+    int i = 0;
+    while(i < n)
+    {
+        i++;
+    }
     return 0;
 }
